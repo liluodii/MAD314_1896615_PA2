@@ -8,8 +8,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
-public class MainActivity extends AppCompatActivity {
+import androidx.annotation.NonNull;
+
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MainActivity extends AppCompatActivity  {
 
     EditText etid, etpassword;
     Button btAdd;
@@ -46,10 +57,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // get field values
                int id = Integer.parseInt(etid.getText().toString());
-                String password =etpassword .getText().toString();
+               String password =etpassword .getText().toString();
 
-
-
+               
                // String sex = etSex.getText().toString();
                // int age = Integer.parseInt(etAge.getText().toString());
 
